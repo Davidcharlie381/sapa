@@ -10,7 +10,7 @@ export default function Hero() {
         <Link href="/">
           <Image src={tukay} alt="Tukay logo" height={90} width={120} />
         </Link>
-        <ul className="hidden md:flex gap-8 text-lg text-[#001B1F] mx-auto">
+        <ul className="hidden md:flex gap-[3vw] text-lg text-[#001B1F] mx-auto">
           <Link
             href="#"
             className="hover:font-semibold hover:-rotate-12 duration-300"
@@ -48,10 +48,10 @@ export default function Hero() {
       </nav>
       <section className=" flex flex-col md:flex-row mt-14 md:mt-6 justify-between items-center">
         <div className="">
-          <h1 className="text-4xl md:max-w-none md:text-6xl text-[#] text-center md:text-left font-bold">
+          <h1 className="text-4xl md:max-w-none md:text-6xl text-[#001b1f] text-center md:text-left font-bold">
             Get your urgent 2k
           </h1>
-          <p className="text-center md:text-left text-lg max-w-[75%] mt-5 mx-auto md:mx-0 md:max-w-[90%]">
+          <p className="text-center md:text-left text-lg max-w-[75%] text-[#001b1f] mt-5 mx-auto md:mx-0 md:max-w-[90%]">
             No cash? No wahala. Get our application and deal with sapa.
           </p>
           {/* <div className="flex md:block"> */}
@@ -104,7 +104,7 @@ export default function Hero() {
           {/* </div> */}
           
         </div>
-        <div className="md:-mr-[3%]"><Image src={couple} alt="Couple" height={500} width={600} />
+        <div className="w-screen md:max-w-[calc(100vw/2)] md:-mr-[3.2%] flex justify-end"><Image src={couple} alt="Couple" height={500} width={600} className=""/>
         </div>
       </section>
     </header>
