@@ -1,7 +1,8 @@
 import Link from "next/link";
-import tukay from "@/public/tukay.svg";
+
 import Image from "next/image";
-import couple from "@/public/couple.png"
+import tukay from "@/public/tukay.svg";
+import couple from "@/public/couple.png";
 
 export default function Hero() {
   return (
@@ -55,7 +56,7 @@ export default function Hero() {
             No cash? No wahala. Get our application and deal with sapa.
           </p>
           {/* <div className="flex md:block"> */}
-            <div className="flex justify-center md:justify-start gap-12 mt-5 md:mt-8 mb-6">
+          <div className="flex justify-center md:justify-start gap-12 mt-5 md:mt-8 mb-6">
             <div className="flex flex-col">
               <span className="text-lg md:text-2xl text-[#001B1F] font-bold tracking-wider">
                 20K+
@@ -102,9 +103,15 @@ export default function Hero() {
             </span>
           </div>
           {/* </div> */}
-          
         </div>
-        <div className="w-screen md:max-w-[calc(100vw/2)] md:-mr-[3.2%] flex justify-end"><Image src={couple} alt="Couple" height={500} width={600} className=""/>
+        <div className="w-screen md:max-w-[calc(100vw/2)] md:-mr-[3.2%] flex justify-end">
+          <Image
+            src={couple}
+            alt="Couple"
+            height={500}
+            width={900}
+            className=""
+          />
         </div>
       </section>
     </header>
